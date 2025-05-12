@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryptify Chat</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="enkripsi-web/static/img/iconfinder-lock-4341303_120563.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="enkripsi-web/static/img/iconfinder-lock-4341303_120563.webp"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="team-header">
+        <h1>Kelompok Al-Mblaem</h1>
+        <h2>Anggota Kelompok</h2>
+        <ul class="member-list">
+          <li class="member-item">Rangga Saputra (6622600070)</li>
+          <li class="member-item">Satria Imaniar (6622600071)</li>
+          <li class="member-item">Ilham Muzaki (6622600073)</li>
+          <li class="member-item">Widya Rahmatika (6622600074)</li>
+        </ul>
+      </header>
+      <div id="messages"></div>
+      <div class="input-area">
+        <input id="inputMsg" type="text" placeholder="Tulis pesan..." />
+        <button id="sendBtn">Kirim</button>
+      </div>
+    </div>
+    <!-- templates/index.html -->
+    <script>
+      const AES_KEY_HEX = "{{ aes_key_hex }}";
+    </script>
+
+    <script src="/static/js/chat.js"></script>
+  </body>
+</html>
